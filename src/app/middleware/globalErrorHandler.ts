@@ -7,8 +7,6 @@ import handleZodError from "../../errors/handleZodError";
 import handleCastError from "../../errors/handleCastError";
 import ApiError from "../../errors/ApiErrors";
 import config from "../../config";
-
-
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
 
   let statusCode = 500;

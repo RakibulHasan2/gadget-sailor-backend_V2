@@ -9,5 +9,6 @@ export default {
     database_url: process.env.DATABASE_URL,
     default_USER_pass: process.env.DEFAULT_USER_PASS,
     default_status: process.env.DEFAULT_STATUS,
-    access_token: process.env.ACCESS_TOKEN
+    access_token: process.env.ACCESS_TOKEN,
+    env: process.env.NODE_ENV,
 }

@@ -92,7 +92,6 @@ const getJwtToken = async (req: Request, res: Response) => {
     return res.send({ accessToken: token })
   }
   res.status(403).send({ accessToken: '' })
-
 }
 
 export const usersController = {

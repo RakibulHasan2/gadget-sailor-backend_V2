@@ -7,7 +7,7 @@ interface AuthenticatedRequest extends Request {
 }
 
 // verify JWT token
-export default function verifyJWT(req: AuthenticatedRequest, res: Response, next: NextFunction) {
+export default function verifyJWT(req: AuthenticatedRequest, res: Response, next: NextFunction){
     const authHeader = req.headers.authorization;
     if (!authHeader) {
         return res.status(401).send('unauthorized access')
